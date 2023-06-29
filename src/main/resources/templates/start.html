@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>Вопрос:</p>
+<p th:text="${question}"></p>
+<p>Ответ:</p>
+<p th:text="${currentAnswer}"></p>
+<form action="/getLatter" method="post">
+    <input type="text" name="latter">
+    <input type="submit">
+</form>
+<p th:text="${vin}"></p>
+<form action="/start" method="get">
+    <button> Перезапустить </button>
+
+</form>
+</body>
+</html>
